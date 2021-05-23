@@ -1,0 +1,35 @@
+GET http://localhost:8000/tasks HTTP/1.1
+
+###
+
+POST http://localhost:3000/tasks/ HTTP/1.1
+content-type: application/json
+
+{
+    "tessxt": "build a todo list service",
+    "due": "2021-04-26T02:33:47.971Z"
+}
+
+###
+
+PATCH http://localhost:3000/tasks/ HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "jQrfV73tUSihhIvJ",
+    "text": "updated"
+}
+
+
+###
+
+DELETE http://localhost:3000/tasks/ HTTP/1.1
+content-type: application/json
+
+[
+    "ecxZo6jnmDSi1owN"
+]
+
+###
+
+POST http://localhost:8000/tasks/logout HTTP/1.1
